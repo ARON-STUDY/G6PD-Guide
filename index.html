@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7b2d3b">
+<link rel="manifest" href="manifest.webmanifest">
+<title>G6PD Drug Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><div class="logo">🩸</div><div><h1>G6PD Drug Guide</h1><p>مرجع سريع لأدوية مرضى نقص G6PD</p></div></div>
+</header>
+<main>
+  <section class="hero">
+    <h2>ابحث عن الدواء</h2>
+    <div class="search"><span>⌕</span><input id="q" placeholder="مثال: Nitrofurantoin" autocomplete="off"></div>
+    <p class="hint">ابحث بالاسم العلمي بالإنجليزية.</p>
+  </section>
+  <section class="filters">
+    <button class="active" data-filter="All">الكل</button>
+    <button data-filter="High">🔴 High</button>
+    <button data-filter="Medium">🟠 Medium</button>
+    <button data-filter="Low-to-no">🟢 Low / no</button>
+  </section>
+  <div id="count" class="count"></div>
+  <section id="results" class="results"></section>
+  <section class="source">
+    <h3>📚 المصدر الأساسي</h3>
+    <p>التصنيف مبني في هذه النسخة الأولية على إرشادات CPIC الخاصة باستخدام الأدوية في سياق نقص G6PD. يجب الرجوع للمصدر الأصلي والملصق الدوائي قبل اتخاذ قرار علاجي.</p>
+    <a href="https://cpicpgx.org/gene/G6PD/" target="_blank" rel="noopener">فتح CPIC G6PD guideline ↗</a>
+    <p class="updated">نسخة أولية — 27 Aug 2026</p>
+  </section>
+</main>
+<footer>G6PD Drug Guide • Educational reference for healthcare professionals</footer>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
